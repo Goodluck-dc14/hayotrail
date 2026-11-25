@@ -1,0 +1,9 @@
+*** FICTIONAL SAMPLE BILL FOR A STUDENT PROJECT. NOT A REAL PATIENT OR CLINIC. ***
+Clinic:          Remera Health Centre (demo)
+Bill number:     RHC-2026-0001
+Visit ID:        VISIT-0004
+Member token:    MEMBER-D (pseudonymous)
+Insurer:         Demo Health Insurance Ltd
+Procedure code:  LAB-MALARIA
+Description:     Malaria rapid test
+Amount (RWF):    5000

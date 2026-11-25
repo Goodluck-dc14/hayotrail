@@ -1,0 +1,9 @@
+*** FICTIONAL SAMPLE BILL FOR A STUDENT PROJECT. NOT A REAL PATIENT OR CLINIC. ***
+Clinic:          Kacyiru Family Clinic (demo)
+Bill number:     KFC-2026-0001
+Visit ID:        VISIT-0001
+Member token:    MEMBER-A (pseudonymous)
+Insurer:         Demo Health Insurance Ltd
+Procedure code:  CONSULT-GP
+Description:     General practitioner consultation
+Amount (RWF):    18000

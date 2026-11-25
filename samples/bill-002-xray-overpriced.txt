@@ -1,0 +1,9 @@
+*** FICTIONAL SAMPLE BILL FOR A STUDENT PROJECT. NOT A REAL PATIENT OR CLINIC. ***
+Clinic:          Kacyiru Family Clinic (demo)
+Bill number:     KFC-2026-0002
+Visit ID:        VISIT-0002
+Member token:    MEMBER-B (pseudonymous)
+Insurer:         Demo Health Insurance Ltd
+Procedure code:  XRAY-CHEST
+Description:     Chest X-ray
+Amount (RWF):    45000

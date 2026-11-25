@@ -1,0 +1,9 @@
+*** FICTIONAL SAMPLE BILL FOR A STUDENT PROJECT. NOT A REAL PATIENT OR CLINIC. ***
+Clinic:          Kacyiru Family Clinic (demo)
+Bill number:     KFC-2026-0003
+Visit ID:        VISIT-0003
+Member token:    MEMBER-C (pseudonymous)
+Insurer:         Demo Health Insurance Ltd
+Procedure code:  LAB-FBC
+Description:     Full blood count
+Amount (RWF):    8000

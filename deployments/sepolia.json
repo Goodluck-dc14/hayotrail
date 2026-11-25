@@ -1,0 +1,12 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "contract": "0x19d44504D4ED72EcD7ee653B39b9EAbD897f8D5f",
+  "deployTx": "0x1b5e1ec51ec034cc7fe30de96bc7e511737fb001b5a01521a05b44a9537bf838",
+  "deployBlock": 12210815,
+  "admin": "0x8fF023e5553261e35BB861b262FDd24C148028EC",
+  "insurer": "0x035780325ffA1853AB293eDf0F7396a20A74353c",
+  "clinicA": "0x74156A36B968c11F22598a08Dbe7116B5aE34BFf",
+  "clinicB": "0xe6B368e056119A9EFd938E8971B88F372F5119E8",
+  "deployedAt": "2026-11-25T16:56:48.725Z"
+}

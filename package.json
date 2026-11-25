@@ -1,0 +1,28 @@
+{
+  "name": "hayotrail",
+  "version": "1.0.0",
+  "description": "HayoTrail: a tamper-proof audit trail for health insurance claims on Ethereum, built for HayoHealth",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "node": "hardhat node",
+    "hash": "node scripts/hashBill.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "demo:local": "hardhat run scripts/demo.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "demo:sepolia": "hardhat run scripts/demo.js --network sepolia",
+    "verify:sepolia": "hardhat run scripts/verify.js --network sepolia",
+    "flatten": "hardhat flatten contracts/HayoTrail.sol > remix/HayoTrail_flat.sol"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "2.29.1",
+    "ethers": "^6.14.0"
+  }
+}
