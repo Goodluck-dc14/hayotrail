@@ -161,18 +161,24 @@ Paste the hash into `verifyClaimDocument` (or `getClaim`) on Etherscan's **Read 
 
 ## Sepolia deployment
 
-Filled in after deployment:
-
 | Item | Value |
 |---|---|
-| HayoTrail (Hardhat) | _see deployments/sepolia.json_ |
-| HayoTrail (Remix) | _address from Remix_ |
+| HayoTrail (Hardhat, source verified) | [`0x19d44504D4ED72EcD7ee653B39b9EAbD897f8D5f`](https://sepolia.etherscan.io/address/0x19d44504D4ED72EcD7ee653B39b9EAbD897f8D5f#code) |
+| HayoTrail (Remix) | [`0x9590d8a35587fa359e3f05a716cc3bfec18e32a2`](https://sepolia.etherscan.io/address/0x9590d8a35587fa359e3f05a716cc3bfec18e32a2) |
+| Deployer / admin (HayoHealth) | `0x8fF023e5553261e35BB861b262FDd24C148028EC` |
+| Insurer (demo) | `0x035780325ffA1853AB293eDf0F7396a20A74353c` |
+| Clinic A (demo) | `0x74156A36B968c11F22598a08Dbe7116B5aE34BFf` |
+| Clinic B (demo) | `0xe6B368e056119A9EFd938E8971B88F372F5119E8` |
+
+The Hardhat demo ran 4 claims on Sepolia and passed 16/16 checks. In Remix I ran a full claim by hand and `getClaim` returned status 4 (Approved).
 
 ## Problems I ran into and how I fixed them
 
 - **Only one funded wallet on Sepolia.** The demo needs four parties. The deploy script makes the insurer and clinic wallets from my key in a fixed way and funds them with a little Sepolia ETH, so the roles stay separate, as they would in real life.
 - **Public RPCs can be a block behind.** In an earlier project a balance read straight after a transfer showed an old value. The scripts now wait for two confirmations on Sepolia and retry reads until they see the change.
 - **Reverted calls show unclear errors.** The demo tests the "should be blocked" cases with `staticCall` (no gas, nothing written) and decodes the contract's custom error names, so the output says exactly which rule stopped it.
+- **The public RPC dropped the connection.** The first Sepolia demo run stopped with `ECONNRESET`. Because the demo skips steps already on-chain, running it again finished with 16/16.
+- **Remix changed its layout.** In Remix 2.6.17, Injected Provider is called Browser Extension and At Address is Add Contract. Remix showed an error after deploying even though the transaction succeeded, so I checked it on Etherscan.
 - **Windows line endings change file hashes.** Git on Windows can turn LF into CRLF, which changes a file's SHA-256. `.gitattributes` keeps the sample bills byte-for-byte the same.
 
 ## Known limitations
